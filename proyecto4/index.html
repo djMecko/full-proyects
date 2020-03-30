@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bienvenido</title>
+	<script src="js/jquery.js"></script>
+</head>
+	<h1>Bienvenido</h1>
+	<ul id="list1">
+		<li id="person1">rodrigo zeballos toRRes</li>
+		<li id="person2">Max zeballos torres</li>
+		<li id="person3">Ronald zeballos torres</li>
+	</ul>
+
+	<ul id="list2">
+		<li id="person1">rodrigo zeballos torres</li>
+		<li id="person2">Max zeballos torres</li>
+		<li id="person3">Ronald zeballos torres</li>
+	</ul>
+
+<body>
+	<script type="text/javascript">
+		function convertir_mayuscula(palabra) {
+			var palabras = palabra.split(" ");
+			// var palabras = ["rodrigo", "zeballos", "torres"]
+			var newpalabra = ""
+			for (var i = 0; i < palabras.length; i++) {
+				nombre = palabras[i]
+				newnombre = nombre.substring(0, 1).toUpperCase() + nombre.substring(1, nombre.length).toLowerCase()
+				newpalabra = newpalabra + " " + newnombre
+			}
+			return newpalabra
+		}
+
+		$("li").click(function () {
+			var nombre = $(this).text();
+			// convertir_mayuscula("rodrigo zeballos torres")
+			var corregido = convertir_mayuscula(nombre)
+			$(this).text(corregido);
+		})			
+
+	</script>
+</body>
+</html>
