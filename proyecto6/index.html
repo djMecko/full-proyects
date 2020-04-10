@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			padding: 0;
+			margin: 0;
+		}
+
+		#example1{
+			width: 100%;
+			height: 400px;
+			background-color: red;
+		}
+		#lateral-menu{
+			width: 20%;
+			height: 100%;
+			background-color: gray;
+			float: left;
+			overflow-y: auto;
+		}
+		#content1{
+			width: 80%;
+			float: left;
+		}
+		#menu{
+			height: 800px;
+		}
+
+		#example2{
+			width: 100%;
+			height: 215px;
+			background-color: blue;
+			overflow-x:	auto; 
+		}
+
+		#horizontal-menu{
+			width: 2000px;
+			height: 200px;
+			background-color: gray;
+			
+		}
+
+	</style>
+</head>
+<body>
+	<!-- Example 1 -> Ejemplo de un menu lateral con "overflow y"-->
+	<div id="example1">
+		<div id="lateral-menu">
+			<div id="menu">
+				hola
+			</div>
+		</div>
+		<div id="content1">
+			<h1>Example 1</h1>
+			<ul>
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+				<li>item 4</li>
+			</ul>		
+		</div>
+	</div>
+	<!-- Example 2 -> Ejemplo usando "z-index" y float-->
+	<div id="example2">
+		<div id="horizontal-menu">
+			menu
+		</div>
+	</div>
+
+
+</body>
+</html>
