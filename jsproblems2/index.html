@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		// Ejercicios con Arrays
+
+		// Los arrays son estructuras de datos en javascript
+		// son de la forma [n1, n2, n3, ... ,nn]
+		// Por ejemplo:
+		// var theArray = [1, 2, 3]
+		// console.log(theArray.length) // va imprimir 3 que es el tamanio del array
+		// console.log(theArray[0]) // va a imprimir 1 que es el elemento en la posicion 0
+		// console.log(theArray[1]) // va a imprimir 2 que es el elemento en la posicion 1
+		// Las posiciones se empiezan a contar desde la posicion 0
+
+
+		// Ejercicios 1: Imprimir un array en consola
+		function imprimir_array(myArray) { // <-- Esta funcion no retorna nada, solo muestra en pantlla
+			for (var i = 0; i < myArray.length; i++) {
+				console.log("valor en posicion " + i + " =" + myArray[i])
+			}
+		}
+		// Ejercicio 2: Verificar que 2 arrays tiene el mismo tamanio
+		function mismo_tamano(myArray1, myArray2) {
+			if(myArray1.length == myArray2.length ){
+				return true
+			}else{
+				return false
+			}
+		}
+
+		// Ejercicio 3: Suma de arrays
+		function suma_arrays(myArray1, myArray2) {
+			if(mismo_tamano(myArray1, myArray2) == false){
+				console.log("Error, los arrays son de diferentes tamanios")
+			}
+			arrayResult = []
+			for (var i = 0; i < myArray1.length; i++) {
+				arrayResult.push(myArray1[i] + myArray2[i])
+			}
+			return arrayResult;
+		}
+		// Ejercicio 4: Resta de arrays
+		function resta_arrays(myArray1, myArray2) {
+			return ;
+		}
+		// Ejercicio 5: Son iguales
+		function son_iguales(myArray1, myArray2) {
+			return ;
+		}
+		// Ejercicio 6: Duplicar cada valor
+		function duplicar(myArray) {
+			return ;
+		}
+		// Ejercicio 7: Triplicar cada valor
+		function triplicar(myArray) {
+			return ;
+		}
+		// Ejercicio 8: es reversa
+		function es_reversa(myArray1, myArray2) {
+			return ;
+		}
+		// Ejercicio 9: Crear array con 0s
+		function crear_zeros(number) {
+			return ;
+		}
+
+		console.log("Ejercicios")
+		// Resultado de ejercicios
+		array1 = [1, 2, 3, 4, 5]
+		array2 = [1, 1, 1, 1, 1]
+		array3 = [1, 2, 1, 2]
+		//Ejercicio 1
+		imprimir_array(array1)
+		/*	rpta: 
+		valor en posicion 0 =1
+		valor en posicion 1 =2
+		valor en posicion 2 =3
+		valor en posicion 3 =4
+		valor en posicion 4 =5
+		*/
+		// Ejercicio 2
+		console.log(mismo_tamano(array1, array2))  // Rpta: true
+		console.log(mismo_tamano(array1, array3))  // Rpta: false
+		// Ejercicio 3
+		console.log(suma_arrays(array1, array2))   // Rpta: [2, 3, 4, 5, 6]
+		// Ejercicio 4
+		console.log(resta_arrays(array1, array2))  // Rpta: [0, 1, 2, 3, 4]
+		// Ejercicio 5
+		console.log(son_iguales([1, 2, 3], [1, 2, 3]))  // Rpta: true
+		console.log(son_iguales([1, 2, 3], [1, 2, 4]))  // Rpta: false
+		// Ejercicio 6
+		console.log(duplicar([1, 2, 3]))  // Rpta: [2, 4, 6]
+		// Ejercicio 7
+		console.log(triplicar([1, 2, 3]))  // Rpta: [3, 6, 9]
+		// Ejercicio 8
+		console.log(es_reversa([1, 2, 3], [3, 2, 1]))  // Rpta: true
+		console.log(es_reversa([1, 2, 3], [3, 1, 2]))  // Rpta: false
+		// Ejercicio 9
+		console.log(crear_zeros(5))  // Rpta: [0, 0, 0, 0, 0]
+		console.log(crear_zeros(2))  // Rpta: [0, 0]
+	</script>
+</body>
+</html>
