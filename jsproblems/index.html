@@ -13,12 +13,12 @@
 		
 		// Ejercicios 2: Resta de dos numeros
 		function resta(var1, var2) {
-			return ;
+			return  var1-var2;
 		}
 		
 		// Ejercicio 3: Multiplicacion
 		function multiplicacion(var1, var2) {
-			return ;
+			return var1*var2;
 		}
 
 		// Ejercicio 4: Suma de los n primeros numeros
@@ -32,7 +32,11 @@
 		// Ejercicio 5: Multiplicacion de los n primeros numeros
 		// Nota: Empieza en 1, Ver como es la respuesta al lado del console log
 		function multiplicacion_n_primeros(n) {
-			return ;
+			var sumator = 0;
+			for (var i = 0; i < n; i++) {
+				sumator = sumator + i
+			}
+			return sumator;
 		}
 		// Ejercicio 5: Si es numero par
 		function es_par(number) {
@@ -42,9 +46,13 @@
 				return false
 			}
 		}
-		// Ejercicio 5: Si es numero par
+		// Ejercicio 5: Si es numero impar
 		function es_impar(number) {
-			return ;
+			if(number % 2 != 0){
+				return true
+			}else{
+				return false
+			}
 		}
 
 		// Ejercicio 6: Convertir todo a mayuscula
@@ -54,7 +62,8 @@
 
 		// Ejercicio 6: Convertir todo a minuscula
 		function mayuscula(word) {
-			return ;
+			return word.toLowerCase();
+
 		}
 
 		console.log("Ejercicios")
