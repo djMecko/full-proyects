@@ -62,7 +62,18 @@
 		}
 		// Ejercicio 8: es reversa
 		function es_reversa(myArray1, myArray2) {
-			return ;
+			reverso = true
+			if(mismo_tamano(myArray1, myArray2) == false){
+				console.log("No son del mismo tamanio")
+			}else{
+				for (var i = 0; i < myArray1.length; i++) {
+					// Aqui verifico si el prmero  es igual al ultimo del segundo array
+					if(myArray1[i] !=  myArray2[myArray2.length- 1 -i]){
+						reverso = false	
+					}
+				}
+			}
+			return reverso;
 		}
 		// Ejercicio 9: Crear array con 0s
 		function crear_zeros(number) {
@@ -98,6 +109,7 @@
 		// Ejercicio 7
 		console.log(triplicar([1, 2, 3]))  // Rpta: [3, 6, 9]
 		// Ejercicio 8
+		console.log("Ejercicio 8")
 		console.log(es_reversa([1, 2, 3], [3, 2, 1]))  // Rpta: true
 		console.log(es_reversa([1, 2, 3], [3, 1, 2]))  // Rpta: false
 		// Ejercicio 9
