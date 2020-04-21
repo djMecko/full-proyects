@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		// Ejercicios con Arrays
+
+		// Ejercicios 1: Son pares
+		function son_pares(myArray) { 
+			newArray = []
+			for (var i = 0; i < myArray.length; i++) {
+				if(myArray[i] % 2 ==0){
+					newArray.push(true)
+				}else{
+					newArray.push(false)
+				}
+			}
+			return newArray
+		}
+		// Ejercicios 2: Son impares
+		function son_impares(myArray) { 
+			return ;
+		}
+
+		// Ejercicios 3: Todos los elementos son pares
+		function todos_son_pares(myArray) {
+			son_pares = true
+			for (var i = 0; i < myArray.length; i++) {
+				if(myArray[i] % 2 != 0){
+					son_pares = false
+				}
+			}
+			return son_pares;
+		}
+
+		// Ejercicio 4: Todos los elementos son impares
+		function todos_son_impares(myArray) {
+			return ;
+		}
+
+		// Ejercicio 5: Todos los elementos son menores a n
+		function menores_a_n(myArray, n) {
+			return ;
+		}
+
+		console.log("Ejercicios")
+		// Resultado de ejercicios
+		console.log("Ejercicio 1")
+		console.log(son_pares([1,2,3]))  // Rpta: [false, true, false]
+		console.log("Ejercicio 2")
+		console.log(son_impares([1,2,3]))  // Rpta: [true, false, true]
+		console.log("Ejercicio 3")
+		console.log(todos_son_pares([2,4,6]))  // Rpta: true
+		console.log(todos_son_pares([2,5,6]))  // Rpta: false
+		console.log("Ejercicio 4")
+		console.log(todos_son_impares([2,4,5]))  // Rpta: false
+		console.log(todos_son_impares([3,5,9]))  // Rpta: true
+		console.log("Ejercicio 5")
+		console.log(menores_a_n([2,4,5], 10))  // Rpta: true
+		console.log(menores_a_n([2,4,11], 10))  // Rpta: false
+
+
+	</script>
+</body>
+</html>
