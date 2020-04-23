@@ -9,41 +9,80 @@
 		// Ejercicios con Arrays
 
 		// Ejercicios 1: Son pares
-		function son_pares(myArray) { 
-			newArray = []
-			for (var i = 0; i < myArray.length; i++) {
-				if(myArray[i] % 2 ==0){
-					newArray.push(true)
-				}else{
-					newArray.push(false)
-				}
+		var array = [2,3,4,5,6]
+		var contador=array.length;
+
+			for (var i = 0; i < contador; i++) {
+			if (array[i]%2==0) {
+				document.write(array[i]+" = "+'Es par'+"<br>")
+			}else {
+				document.write(array[i]+" = "+"Es impar"+"<br>")
 			}
-			return newArray
 		}
 		// Ejercicios 2: Son impares
-		function son_impares(myArray) { 
-			return ;
-		}
+			Pos el ejercicio de arriba tambien hace los impares...?? o tenia que hacerlo separado
 
 		// Ejercicios 3: Todos los elementos son pares
-		function todos_son_pares(myArray) {
-			son_pares = true
-			for (var i = 0; i < myArray.length; i++) {
-				if(myArray[i] % 2 != 0){
-					son_pares = false
+		var array = [8,8,8,3,8];
+		var contador = 0;
+		var extra=0;
+
+			for (var i = 0; i < array.length; i++) {
+				contador= array[i];
+			if (contador%2==0) {
+			} else {
+				extra=extra+1;
 				}
 			}
-			return son_pares;
-		}
+
+			if (extra!=0) {
+			document.write("False")
+			} else {
+			document.write("True")
+			}
 
 		// Ejercicio 4: Todos los elementos son impares
-		function todos_son_impares(myArray) {
-			return ;
+
+		var array = [3,3,3,3,3];
+		var contador = 0;
+		var extra=0;
+
+			for (var i = 0; i < array.length; i++) {
+				contador= array[i];
+			if (contador%2!=0) {
+			} else {
+				extra=extra+1;
+			}
+		}
+
+		if (extra==0) {
+			document.write("true")
+		} else {
+			document.write("false")
 		}
 
 		// Ejercicio 5: Todos los elementos son menores a n
-		function menores_a_n(myArray, n) {
-			return ;
+		// El numero esta dado por "N"
+		var array = [4,5,6,7,8];
+		var contador = 0;
+		var n=2;
+		var contadorextra=0;
+		document.write(n);
+		for(var i = 0 ; i < array.length; i++) {
+			contador=array[i];
+			console.log(contador)
+			if (contador<n) {
+				document.write("<br>Son menores a " +n+ "=" +contador);
+			} else {
+				document.writeln("<br>Son mayores a "+n+" = "+contador);
+				contadorextra=contadorextra+1;
+		
+			}
+		}	
+		if (contadorextra !=0) {
+			document.write("<br>"+"<br>"+"<br>"+"false");	
+		}else {
+			document.write("<br>"+"<br>"+"<br>"+"true");
 		}
 
 		console.log("Ejercicios")
