@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		// Exercises with arays
+
+		// Exercise 1: get all pairs
+		// Return an array with pairs numbers
+		function get_all_pairs(myArray) {
+			newarray=[]
+			for (var i = 0; i < myArray.length; i++) {
+				if (myArray[i]%2==0) {
+					newarray.push(myArray[i]);
+				}
+			}return newarray;	
+		}
+
+		// Exercise 2: amplify
+		// Return an array mutiply with a number
+		function amplify(myArray, number) {
+			newarray=[]
+			for (var i = 0; i < myArray.length; i++) {
+				newarray.push(myArray[i]*number)
+			} return newarray;
+		}
+
+		// Exercise 3: Remove a number
+		// Return an array removing a number
+		function remove_number(myArray, number) {
+			newarray=[]
+			for (var i = 0; i < myArray.length; i++) {
+				if (myArray[i]!=number) {
+					newarray.push(myArray[i])
+				}
+			}
+			return newarray;
+		}
+
+		// Exercise 4: Replace a number
+		// Return an array with a number replaced
+		function replaced_number(myArray, number, newNumber) {
+			newarray=[]
+			for (var i = 0; i < myArray.length; i++) {
+				if (myArray[i]==number) {
+					newarray.push(newNumber)
+				} else {
+					newarray.push(myArray[i])
+				}
+			}return newarray;
+		}
+
+		// Exercise 5: find minimun
+		// return a minimun number
+		function minimun_number(myArray) {
+			newarray=[]
+			var minValue = Math.min(...myArray);
+			for (var i = 0; i < myArray.length; i++) {
+				newarray.push(myArray[i])
+			}
+			return minValue
+		}
+
+		// Exercise 6: find maximun
+		// return a minimun number
+		function maximun_number(myArray) {
+			newarray=[]
+			var maxValue = Math.max(...myArray)
+			for (var i = 0; i < myArray.length; i++) {
+				newarray.push(myArray[i]);
+			}
+			return maxValue
+		}
+
+		
+		console.log("Ejercicios")
+		// Resultado de ejercicios
+		console.log("Ejercicio 1")
+		console.log(get_all_pairs([2, 3, 4, 7])) // Rpta: [2, 4]
+		console.log("Ejercicio 2")
+		console.log(amplify([2, 3, 4], 2)) // Rpta: [4, 6, 8]
+		console.log(amplify([2, 3, 4], 5)) // Rpta: [10, 15, 20]
+		console.log("Ejercicio 3")
+		console.log(remove_number([2, 3, 4], 2)) // Rpta: [3, 4]
+		console.log(remove_number([4, 3, 4], 4)) // Rpta: [3]
+		console.log("Ejercicio 4")
+		console.log(replaced_number([2, 3, 4], 2, 10)) // Rpta: [10, 3, 4]
+		console.log(replaced_number([4, 3, 4], 4, 5)) // Rpta: [5, 3, 5]
+		console.log("Ejercicio 5")
+		console.log(minimun_number([2, 3, 4])) // Rpta: [2]
+		console.log("Ejercicio 6")
+		console.log(maximun_number([2, 3, 4])) // Rpta: [4]
+
+
+
+	</script>
+</body>
+</html>

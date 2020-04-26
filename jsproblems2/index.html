@@ -45,21 +45,59 @@
 			return arrayResult;
 		}
 		// Ejercicio 4: Resta de arrays
-		function resta_arrays(myArray1, myArray2) {
-			return ;
+		function resta_arrays(myArray1, myArray2){
+		 	if (mismo_tamano(myArray1,myArray2)==false) {
+		 		console.log("Error, los array son de diferentes tamaños")
+		 	}
+		 	arrayResult = []
+
+			for (var i = 0; i < myArray1.length; i++) {
+				arrayResult.push(myArray1[i]-myArray2[i])
+			}
+			return arrayResult ;
 		}
 		// Ejercicio 5: Son iguales
 		function son_iguales(myArray1, myArray2) {
-			return ;
+			var contador = 0;
+			if (mismo_tamano(myArray1,myArray2)==false) {
+		 		console.log("Error, los array son de diferentes tamaños")
+		 	}else {
+		 		for (var i = 0; i < myArray1.length; i++) {
+				if (myArray1[i]==myArray2[i]) {
+					contador=contador;
+				}else {
+					contador=contador+1;
+				}
+			}
+		 	}
+			if (contador != 0) {
+				return false
+			} else {
+				return true
+			}
 		}
 		// Ejercicio 6: Duplicar cada valor
 		function duplicar(myArray) {
-			return ;
-		}
+			var contador=0;
+			arrayResult = []
+
+			for (var i = 0 ; i < myArray.length; i++) {
+				contador=myArray[i]*2;
+				arrayResult.push(contador)
+
+			}return arrayResult;
+		}			
+
 		// Ejercicio 7: Triplicar cada valor
 		function triplicar(myArray) {
-			return ;
-		}
+			var contador=0;
+			arrayResult = []
+
+			for (var i = 0 ; i < myArray.length; i++) {
+				contador=myArray[i]*3;
+				arrayResult.push(contador)
+
+			}return arrayResult;		}
 		// Ejercicio 8: es reversa
 		function es_reversa(myArray1, myArray2) {
 			reverso = true
@@ -77,7 +115,12 @@
 		}
 		// Ejercicio 9: Crear array con 0s
 		function crear_zeros(number) {
-			return ;
+			newarray=[]
+			contador=0;
+			for (var i = 0 ; i < number; i++) {
+				contador=0;
+				newarray.push(contador);		
+			} return newarray
 		}
 
 		console.log("Ejercicios")
