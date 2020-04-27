@@ -80,7 +80,16 @@
 		// Si el menu lleva una comida o bebida no saludable retorna "NS"
 		// caso contrario retorna "S"
 		function menus(drink, food) {
-			
+			text = ""
+			if(!(drink == "Refreso" || drink == "te" || drink == "gaseosa")){
+				text = "Error: Opcion no valida"
+			}
+			if(!(food == "frituras" || food == "ensaladas" || food == "Postres")){
+				text = "Error: Opcion no valida"
+			}
+
+			// Incluir lo demas aqui
+			return text
 		}
 
 		console.log("Ejercicios")
