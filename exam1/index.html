@@ -10,7 +10,6 @@
 		// Si la posicion es mayor al tamano del array retornara un error
 		function insert_number(myArray, position, number) {
 			newarray= []
-			newarray1= []
 
 			for (var i = 0 ; i < myArray.length; i++) {
 				if (i==position) {
@@ -21,7 +20,6 @@
 
 			if (position ==i+1) {
 				newarray.push(number)
-				newarray1.push(position)
 			} 
 			
 			return newarray ;
