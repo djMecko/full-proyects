@@ -38,9 +38,12 @@
 		// Retorna el numbero de digitos de un numero
 		// Tip: puede usar la division entre 10
 		function count_digits(number) {
-			for (var i = 0; i < number.length; i++) {
+			digits = 1
+			for (; number > 9; ) {
+				digits = digits + 1
+				number = number /10 
 			}
-			return i;
+			return digits;
 		}
 
 		console.log("Ejercicios")
