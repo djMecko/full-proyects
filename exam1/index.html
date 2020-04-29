@@ -9,18 +9,40 @@
 		// Ejercicio 1: Insertar un numero en un array en una posicion especifica
 		// Si la posicion es mayor al tamano del array retornara un error
 		function insert_number(myArray, position, number) {
-			return ;
+			newarray= []
+			newarray1= []
+
+			for (var i = 0 ; i < myArray.length; i++) {
+				if (i==position) {
+				 newarray.push(number)
+				} 
+				newarray.push(myArray[i])
+			} 
+
+			if (position ==i+1) {
+				newarray.push(number)
+				newarray1.push(position)
+			} 
+			
+			return newarray ;
 		}
 		// Ejercicio 2: Invierte un array
 		// No se puede usar la funcion .reverse()
 		function reverse(myArray) {
-			return ;
+			reversa = []
+			for (var i = myArray.length-1; i >= 0; i--) {
+				reversa.push(myArray[i])
+
+			}
+			return reversa
 		}
 		// Ejercicio 3: Contar digitos
 		// Retorna el numbero de digitos de un numero
 		// Tip: puede usar la division entre 10
 		function count_digits(number) {
-			return ;
+			for (var i = 0; i < number.length; i++) {
+			}
+			return i;
 		}
 
 		console.log("Ejercicios")
