@@ -9,8 +9,18 @@
 # entre 17 y 60 adulto
 # de 60 hacia adelante anciano
 def person_life(age):
-	return ;
-
+    a=None;
+    if age>=0 and age<3:
+        a="Infante"
+    elif age>=3 and age<10:
+        a="Niño"
+    elif age>=10 and age<17:
+        a="Adolescente"
+    elif age>=17 and age<60:
+        a="Adulto"
+	else:
+        a="anciano"
+	return a;
 # Ejercicio 2: Rango de edad
 # Usando las reglas anteriores, si yo ingreso
 # una edad de vida, deberia imprimi el rango de edad

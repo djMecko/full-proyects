@@ -5,6 +5,7 @@
 </head>
 <body>
 	<script type="text/javascript">
+
 		
 		// Ejercicio 1: Insertar un numero en un array en una posicion especifica
 		// Si la posicion es mayor al tamano del array retornara un error
@@ -38,12 +39,10 @@
 		// Retorna el numbero de digitos de un numero
 		// Tip: puede usar la division entre 10
 		function count_digits(number) {
-			digits = 1
-			for (; number > 9; ) {
-				digits = digits + 1
-				number = number /10 
+			for (var i = 0; i < number.length; i++) {
 			}
-			return digits;
+			document.write(typeof(i))
+			return i;
 		}
 
 		console.log("Ejercicios")
@@ -63,6 +62,7 @@
 		console.log(count_digits("1253")) // Rpta: 4
 		console.log(count_digits("153")) // Rpta: 3
 		console.log(count_digits("43")) // Rpta: 2
+	
 	</script>
 </body>
 </html>

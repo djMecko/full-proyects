@@ -7,6 +7,9 @@ import math
 print(math.ceil(10.11))	# Rpta: 11
 # print(math.comb(10, 4)) # Error not working
 print(math.fabs(-7.7))	#Rpta: 7.7
+print(math.factorial(4)) #devuelve el factorial de un numero
+print(math.copysign(-100,40 ) ) #Devuelve el factorial del primero???
+print(math.fabs( -19)) #Rpta 19 devuelve el valor absoluto
 
 
 # Ejercicios 2: Escribir un ejemplo para cada funcion de string
@@ -14,3 +17,6 @@ print(math.fabs(-7.7))	#Rpta: 7.7
 texto_prueba = "RoDriGo"
 print(texto_prueba.capitalize())
 print(texto_prueba.center(20, '-'))
+print(texto_prueba.lower())
+print(texto_prueba.upper())
+print(texto_prueba.expandtabs(3) )
