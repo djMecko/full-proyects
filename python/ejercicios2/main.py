@@ -9,24 +9,37 @@
 # entre 17 y 60 adulto
 # de 60 hacia adelante anciano
 def person_life(age):
-    a=None;
+    numero=None;
     if age>=0 and age<3:
-        a="Infante"
+        numero="Infante"
     elif age>=3 and age<10:
-        a="Niño"
+        numero="Niño"
     elif age>=10 and age<17:
-        a="Adolescente"
+        numero="Adolescente"
     elif age>=17 and age<60:
-        a="Adulto"
-	else:
-        a="anciano"
-	return a;
+        numero="Adulto"
+    else:
+        numero="anciano"
+    return numero
 # Ejercicio 2: Rango de edad
 # Usando las reglas anteriores, si yo ingreso
 # una edad de vida, deberia imprimi el rango de edad
 # de ser una opcion no validd, deberi imprimir un error
 def age_range(age):
-	return;
+    numero=None;
+    if age=="infante":
+        numero="0-3"
+    elif age=="niño":
+        numero="3-10"
+    elif age=="adolescente":
+        numero="10-17"
+    elif age=="adulto":
+        numero="17-60"
+    elif age=="anciano":
+        numero="60-màs"
+    else:
+        numero="No existe"
+    return numero
 
 # Ejercicio 3: price
 # Reglas:
@@ -35,7 +48,14 @@ def age_range(age):
 # Si precio > 60 retorna caro 
 
 def prices(price):
-	return;
+    numero=int(price)
+    precio:None
+    if numero>=0 and numero<10:
+        return "Barato"
+    elif numero>=10 and numero<=60:
+        return "Regular"
+    else:
+        return "Caro"
 
 ## Ejercicio 4: Menus de un restaurante
 ## Los menus de un restaurante estan compuestos de bebidas y comidas
@@ -46,8 +66,15 @@ def prices(price):
 ## caso contrario retorna "S"
 
 def menus(drink, food):
-	return;
-
+    if not(drink=="Refreso" or drink=="te" or drink=="gaseosa"):
+        return "Error: Opcion no valida"
+    if not(food=="frituras" or food=="ensaladas" or food=="Postres"):
+        return "Error: Opcion no valida"
+    if drink=="Refreso" or drink=="te" and food=="ensaladas":
+        return "S"
+    elif not(drink=="Refreso" or drink=="te" and food=="ensaladas"):
+        return "NS"
+    
 print("Ejercicio 1")
 print(person_life(5)) #  Rpta: "nino"
 print(person_life(80)) #  Rpta: "anciano"
