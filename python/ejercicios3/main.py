@@ -10,44 +10,64 @@ def equal_size(array1, array2):
 # input: array1 = [], array2 = []
 # output: return sum of arrays
 def sum_arrays(array1, array2):
-	return ;
-
+    suma=[]
+    if len(array1) == len(array2):
+        for i in range(len(array1)):
+            suma.append(array1[i]+array2[i])
+    else:
+        suma.append("Error: diferente sizes")
+    return suma;
+            	
 # Ejercicio 3
 # input: array1 = [], array2 = []
 # output: return true if are equals else return false
 def are_equals(array1, array2):
-	return ;
+    if array1==array2:
+        return True;
+    else:
+        return False;
 
 # Ejercicio 4
 # input: array1 = []
 # output: return an array duplicate
 def duplicate(array1):
-	return ;
+    suma=[]
+    for i in range(len(array1)):
+        suma.append(array1[i]*2)
+    return suma;
 
 # Ejercicio 5
 # input: array1 = [], array2 = []
 # output: return true if an array is the reverse of the other
 def is_reverse(array1, array2):
-	return ;
-
+    return;
 # Ejercicio 6
 # input: array1 = [], number = int
 # output: return an array with the number less to n
 def less_to(array1, number):
-	return ;
+    suma=[]
+    for i in range(len(array1)):
+        if array1[i]<number:
+            suma.append(array1[i])
+    return suma;
 
 # Ejercicio 7
 # input: array1 = [], find_number = int, replace_number
 # output: return an array with the numbers replaced
 def replace_number(array1, find_number, replace_number):
-	return ;
+    array1[find_number]=replace_number
+    return array1;
 
 # Ejercicio 8
 # input: array1 = []
 # output: return the minimun number of the array
 def minimun_number(array1):
-	return ;
-
+	newarray=[]
+	for i in range(len(array1)):
+        if array1[i]<array1[i+1]:
+            newarray
+     
+     
 # Ejercicio 9
 # input: array1 = [(a,b)]
 # output: return the name of the cheaper fruit
