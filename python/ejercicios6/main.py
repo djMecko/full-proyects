@@ -36,6 +36,12 @@ print(fido.comments)
 toribio = Dog("toribio", "negro", 2016, True)
 fido.get_info()
 
+# Revisar
+
+# https://www.w3schools.com/python/python_classes.asp
+# https://www.learnpython.org/en/Classes_and_Objects
+
+
 # Clase Felino
 # Clase paquidermo
 # Clase pescado
