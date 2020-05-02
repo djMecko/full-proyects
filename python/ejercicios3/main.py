@@ -32,29 +32,34 @@ def are_equals(array1, array2):
 # output: return an array duplicate
 def duplicate(array1):
     suma=[]
-    for i in range(len(array1)):
-        suma.append(array1[i]*2)
+    for item in array1:
+        suma.append(item*2)
     return suma;
 
 # Ejercicio 5
 # input: array1 = [], array2 = []
 # output: return true if an array is the reverse of the other
 def is_reverse(array1, array2):
-    return;
+    for i in range(0,len(array1)):
+        if array1[i] != array2[len(array2)-1 -i]:
+            return False
+    return True;
 # Ejercicio 6
 # input: array1 = [], number = int
 # output: return an array with the number less to n
 def less_to(array1, number):
     suma=[]
-    for i in range(len(array1)):
-        if array1[i]<number:
-            suma.append(array1[i])
+
+    for item in array1:
+        if item<number:
+            suma.append(item)
     return suma;
 
 # Ejercicio 7
 # input: array1 = [], find_number = int, replace_number
 # output: return an array with the numbers replaced
 def replace_number(array1, find_number, replace_number):
+    ## Reacer
     array1[find_number]=replace_number
     return array1;
 
@@ -62,27 +67,27 @@ def replace_number(array1, find_number, replace_number):
 # input: array1 = []
 # output: return the minimun number of the array
 def minimun_number(array1):
-	newarray=[]
-	for i in range(len(array1)):
-        if array1[i]<array1[i+1]:
-            newarray
+    # Reacer
+    pass
+
      
      
 # Ejercicio 9
 # input: array1 = [(a,b)]
 # output: return the name of the cheaper fruit
 def cheap_fruit(array1):
-	most_cheap = ("none",1000);
-	for item in array1:
-		if item[1] < most_cheap[1]:
-			most_cheap = item
-	return most_cheap[0];
+    most_cheap = array1[0];
+    for item in array1:
+        if item[1] < most_cheap[1]:
+            most_cheap = item
+    return most_cheap[0];
 
 # Ejercicio 10
 # input: array1 = [(a,b)]
 # output: return the name of most expensive fruit
 def expensive_fruit(array1):
-	return ;
+    # reacer
+    return ;
 
 print("Ejercicio 1")
 print(equal_size([1,2,3],[4,5,6])) # Rpta: true
