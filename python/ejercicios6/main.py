@@ -45,3 +45,80 @@ fido.get_info()
 # Clase Felino
 # Clase paquidermo
 # Clase pescado
+
+
+class Felino:
+    def __init__(self,nombre,edad,sano,raza):
+        self.nombre= nombre
+        self.edad = edad
+        self.sano = sano
+        self.raza = raza
+        self.especie = "Felino"
+    
+    def sacando_info(self):
+        print("----Datos del Mishifus----")
+        print("name:\t"+str(self.nombre))
+        print("edad:\t"+str(self.edad))
+        print("salud:\t"+str(self.sano))
+        if self.sano == True:
+            print("El gato esta bien")
+        else:
+            print("El gato esta mal")
+        print("raza:\t"+str(self.raza))
+        print("especie:\t"+str(self.especie))
+        print("---------FIN-----------")
+    
+        
+felino = Felino("Juanito",15,False,"Mestiso")
+print(felino.sacando_info())
+
+
+#Clase Paquidermo
+
+class Paquidermo:
+    def __init__(self,nombre,edad,sano,raza,tamano,peso):
+        self.nombre= nombre
+        self.edad = edad
+        self.sano = sano
+        self.raza = raza
+        self.tamano = tamano
+        self.peso = peso
+        self.especie = "Hipopotamo"
+    
+    def sacando_info(self):
+        print("----Datos del Gordo :v----")
+        print("name:\t"+str(self.nombre))
+        print("edad:\t"+str(self.edad))
+        print("salud:\t"+str(self.sano))
+        if self.sano == True:
+            print("El Hipopotamo esta bien")
+        else:
+            print("El Hipopotamo esta mal")
+        print("raza:\t"+str(self.raza))
+        print("tamaño:\t"+str(self.tamano))
+        print("peso:\t"+str(self.peso))
+        print("especie:\t"+str(self.especie))
+        print("---------FIN-----------")
+    
+        
+paquidermo = Paquidermo("Gloria",12,True,"Choeropsis",1.92,"900 kg")
+print(paquidermo.sacando_info())
+
+#Clase Pescado
+
+class Pescado:
+    def __init__(self,peso,tamano,tipo,parte):
+        self.peso = peso
+        self.tamano = tamano
+        self.tipo = tipo
+        self.parte = parte
+    
+    def sacando_info(self):
+        print("---Datos del Nemo----")
+        print("Peso: "+str(self.peso))
+        print("Tamano: "+str(self.tamano))
+        print("Tipo: "+str(self.tipo))
+        print("Parte: "+str(self.parte))
+
+pescado = Pescado("4kg","10cm","Furel","Pierna")
+print(pescado.sacando_info())
