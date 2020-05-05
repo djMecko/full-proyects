@@ -1,0 +1,55 @@
+# Vamos a tener una matricula de alumnos
+# Cuando ejecutamos el programa nos va a salir el siguiente menu
+
+# Ingrese una opcion
+# 1 - Agregar un estudiante
+# 2 - Mostrar todos los estudiantes
+# 3 - terminar el programa
+# Opcion: 
+
+# vamos a tener el objecto estudiante con los siguientes atributos
+# student(name, age)
+
+
+# opcion 1
+
+# Ingresar nombre:
+# rodrigo
+# Ingresar edad:
+# 19
+# Se agrego correctamente
+
+# Ingrese una opcion
+# 1 - Agregar un estudiante
+# 2 - Mostrar todos los estudiantes
+# 3 - terminar el programa
+# Opcion: 2
+
+# ---- informacion ----
+# Nombre
+# edad
+
+# Ingrese una opcion
+# 1 - Agregar un estudiante
+# 2 - Mostrar todos los estudiantes
+# 3 - terminar el programa
+# Opcion: 2
+
+# --------------
+
+arrayStudents = []
+
+for x in xrange(1,100):
+	print("menu")
+
+	ingrese "opcion"
+
+	if opcion == 1:
+		# pedimos los datos
+		arrayStudents.append(Student()) 
+		print("se agrego correctamente")
+	elif opcion == 2:
+		for item in arrayStudents:
+			print(item.get_info())
+	else:
+		print("error")
