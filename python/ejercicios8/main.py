@@ -13,6 +13,7 @@ if __name__ == '__main__':
 	for i in range(0,9):
 		student = Student("Nombre"+str(i), random.randint(10, 22), "123123","LP")
 		arrayStudents.append(student)
+		print(student,i)
 
 	# [Student(), Student(), Student() ... 10]
 

@@ -22,7 +22,7 @@ def menu():
         print("Imprimiendo Lista de estudiantes")
         for i in range(len(array_nombre)):
             print(i+1,"Nombre: ",array_nombre[i]," Edad: ", array_edad[i],"\n")
-    
+            return menu()
     elif seleccion == 3:
         print("Usted esta saliendo del programa...adios")
     
