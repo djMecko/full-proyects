@@ -16,8 +16,8 @@ class Dictionary:
 def menu():
     print("Que desea hacer: ")
     print("1:Añadir palabras: ")
-    print("2:Ver palabras: ")
-    print("3:Buscar palabras: ")
+    print("2:Buscar palabras: ")
+    print("Para salir presione cualquier boton menos uno y dos")
     dictionary = Dictionary("","") 
 
     seleccion = int(input())
@@ -33,7 +33,6 @@ def menu():
         return menu()
         
     elif seleccion == 2:
-        print("Disponible Proximamente")
         dictionary.search_word()
         print("Busque su palabra")
         word = str(input())
@@ -44,8 +43,7 @@ def menu():
                 print("Palabras no encontrada")
         return menu()
     else:
-        print("Ingrese un valor correcto por favor")
-        return menu()
+        print("ADIOS!!!...")
 
     
 menu()
