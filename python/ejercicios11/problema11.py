@@ -11,41 +11,52 @@ class Estudiante:
         self.nombre = nombre
         self.edad = edad
     
-class Curso(Estudiante):
-    def __init__(self,nombre,edad,materia):
-        super().__init__(nombre,edad)
-        self.materia = materia
     def get_info(self):
-        
-        return "Lista 1"
+        print("nombre:" + self.nombre)
+        print("edad  :" + str(self.edad))
 
-        
+
+class Curso:
+    def __init__(self,materia):
+        self.materia = materia
+
+    def get_info(self):
+        print("curso  :" + str(self.materia))
+
+estudiantes = []
+cursos = []
 
 def menu():
-    print("Seleccione un opciòn del 1 al 3")
+    print("Seleccione un opcion del 1 al 3")
     print("1: Agregar estudiante")
     print("2: Ver estudiantes")
-    print("3: Salir del programa")
+    print("3: Agregar curso")
+    print("4: Ver cursos")
+    print("5: Salir del programa")
     
     seleccion= int(input())
     if seleccion == 1:
-        print("Ingrese su nombre")
-        name = str(input())
-        print("Ingrese su edad")
-        age = str(input())
-        print("Ingrese su curso")        
-        course = str(input())
-        curso = Curso(name,age,course)
+        name = str(input("Ingresar nombre: "))
+        age = str(input("Ingresar edad: "))
+        estudiantes.append(Estudiante(name, age))
         return menu()
     elif seleccion == 2:
         print("Ver la lista de alumnos")
-        Curso.get_info()
-
+        for item in estudiantes:
+            item.get_info()
         return menu()
-    elif seleccion == 3:
+    if seleccion == 3:
+        materia = str(input("Ingresar materia: "))
+        cursos.append(Curso(materia))
+        return menu()
+    elif seleccion == 4:
+        print("Ver la lista de cursos")
+        for item in cursos:
+            item.get_info()
+        return menu()
+    elif seleccion == 5:
         print("Saliendo del programa...Bye")
     else:
         print("Elije del 1 al 3")
 
-    
-print(menu())
+menu()
