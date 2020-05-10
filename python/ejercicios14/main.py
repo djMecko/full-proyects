@@ -18,8 +18,7 @@ def ejercicio4(numero):
 def ejercicio5(dinero,interes,year):
 
     for i in range(year):
-        dinero = dinero * (1 + 10/100)
-        #dinero= dinero+(dinero*(interes/100))
+        dinero= dinero+(dinero*(interes/100))
         print("dinero: ",dinero,"  Interes: ",interes)
 
 def ejercicio6(entero):
@@ -78,7 +77,7 @@ def ejercicio13():
 #ejercicio2(40)s
 #ejercicio3(10)
 #ejercicio4(9)
-#ejercicio5(1000,10,5)
+ejercicio5(1000,10,10)
 #ejercicio6(5)
 #ejercicio7()
 #ejercicio8(9)
@@ -86,4 +85,4 @@ def ejercicio13():
 #ejercicio10(97)
 #ejercicio11("HOLA")
 #ejercicio12("Cachetada","a")
-ejercicio13()
+#ejercicio13()
