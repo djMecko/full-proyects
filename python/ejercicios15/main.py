@@ -17,6 +17,12 @@ def ejercicio3(*cursos):
         print("Curso: ",cursos[i],"  Notas: ",notas[i])
 
 
+def ejercicio4(*v):
+    UNO = [0,94,14,12,10,2,0]
+    UNO.sort()
+
+    print("Los números ganadores son " + str(UNO))
+        
 def ejercicio5(*numero):
     for i in range(len(numero)-1,-1,-1):
         print(numero[i])
@@ -84,12 +90,12 @@ def ejercicio11(a,b):
 #ejercicio1("matematica","quimica","fisica","historia","lengua")
 #ejercicio2("matematica","quimica","fisica","historia","lengua")
 #ejercicio3("matematica","quimica","fisica","historia","lengua")
-#ejercicio4(0,94,14,12,10,2,0)
+ejercicio4(0,94,14,12,10,2,0)
 #ejercicio5(1,2,3,4,5,6,7,8,9,10)
 #ejercicio6("matematica","quimica","fisica","historia","lengua")
 #ejercicio7(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'])
 #ejercicio8("aarañara","araañara")
 #ejercicio9("aaaeei")
 #ejercicio10([50, 75, 46, 22, 80, 65, 8])
-ejercicio11((1,2,3),(-1,0,2))
+#ejercicio11((1,2,3),(-1,0,2))
 
